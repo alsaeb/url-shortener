@@ -1,0 +1,31 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node -r dotenv/config server/server.js",
+    "test": "jest /tests --testEnvironment=node --runInBand --forceExit --detectOpenHandles"
+  },
+  "jest": {
+    "setupFiles": ["dotenv/config"]
+  },
+  "keywords": [],
+  "author": "Veselin Yotov",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.26",
+    "morgan": "^1.10.0",
+    "shortid": "^2.2.15",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "jest": "^26.2.2"
+  }
+}
